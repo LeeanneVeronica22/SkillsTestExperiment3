@@ -10,7 +10,7 @@ int main()
 {
     int tempertr[Province][Day];
 
-    cout << "Please enter temperatures from day 1 to day 6 of provinces A, B, and C continuously.\n";
+    cout << "Please enter temperatures from day 1 to day 7 of provinces A, B, and C continuously.\n";
     cout << endl;
     
 
@@ -24,7 +24,7 @@ int main()
     }
 
    
-cout<<"\nDisplaying Values: \n";
+cout<<"\nDISPLAY: \n";
     for (char i = 0, prvnce = 'A' ; i < Province; ++i, prvnce++)
     {
         for(int j = 0; j < Day; ++j)
