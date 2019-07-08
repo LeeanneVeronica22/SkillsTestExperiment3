@@ -1,27 +1,27 @@
 #include <iostream>
 #include <string>
-#include 
-<conio.h>
+#include <conio.h>
+
 using namespace std;
 int main()
 {
 	char arr[30];
 	int pos;
 
-	cout << "Please enter a code: ";
+	cout << "CODE: ";
 	cin >> arr;
 	cout << endl;
 	
 	pos =0;
 	while(arr[pos] !='\0')
 		pos++;
-	cout << "Reversed version of the entered code: ";
+	cout << "REVERSED CODE: ";
 		for(int a=pos-1;a>=0;a--)
 		{
 			cout << arr[a];
 		}
 	cout << endl;
-	cout<< "\nSize of the array: "<< pos;
+	cout<< "\nARRAY SIZE: "<< pos;
 
 	getch();
 	return 0;
