@@ -1,11 +1,12 @@
 #include <iostream>
 #include <conio.h>
+
 using namespace std;
 int main()
 {
-  int  size=10, array[50], i, j, temp, total, ave;
+  int  size=15, array[50], i, j, temp, total, ave;
  
-  cout<< "Enter 10 numbers: ";
+  cout<< "Please enter 15 numbers: ";
   for (i=0; i<size; i++)
   {
       cin>> array[i];
@@ -25,22 +26,27 @@ int main()
       }
   }
   
-  cout<< "Array after sorting: \n";
+  cout<< "Array after sorting in ascending order: \n";
   for (i=0; i<size; i++)
   {
       cout <<array[i]<<" ";
   }
   cout << endl;
-  cout<< "\nsmallest number: \n"<< array[0];
+  cout<< "\n the smallest number is: "<< array[0];
   cout << endl;
-  cout<< "\nlargest number: \n" << array[9];
+  cout<< "\n the largest number is: " << array[14];
 
 for (i=0; i< size; i++)
 {
     total+=array[i];
 }
+
 cout << endl;
- cout<< "\ntotal: \n"<<total; 
+ cout<< "\ntotal: "<<total; 
+ 
+ ave = total/15;
+ cout << "\naverage: "<< ave;
+ 
  getch();
   return 0;
 }
